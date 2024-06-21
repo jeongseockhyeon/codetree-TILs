@@ -13,7 +13,7 @@ public class Main {
         }
 
         int a = numArr[0];
-        int b = 0;
+        int b = -1;
 
         int minHundred = 200;
 
