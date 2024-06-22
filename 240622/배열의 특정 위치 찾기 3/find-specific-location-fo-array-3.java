@@ -6,23 +6,19 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int[] numArr = new int[100];
-        int sum = 0;
-        for (int i = 0 ; i < 8 ; i++){
+        int idx = 0;
 
-            numArr[i] = sc.nextInt();
-        }
+        while (true){
+            int num = sc.nextInt();
+            numArr[idx] = num;
+            idx++;
 
-
-        for (int j = 0 ; j < 8 ; j++){
-            if(numArr[j]==0){
-                for (int k = j-1 ; k >= j-3 ; k--){
-                    sum += numArr[k];
-                    continue;
-                }
+            if (num == 0){
+                break;
             }
         }
 
+        int sum = numArr[idx-2]+numArr[idx-3]+numArr[idx-4];
         System.out.print(sum);
-
     }
 }
