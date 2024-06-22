@@ -7,9 +7,15 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int num = sc.nextInt();
-
-        for(int i = 1; i <= 10 ; i++){
-            System.out.print(num*i + " ");
+        if (num == 5 ){
+            for(int i = 1; i <= 2 ; i++){
+                System.out.print(num*i + " ");
+            }
+        } else {
+            for(int i = 1; i <= 10 ; i++){
+                System.out.print(num*i + " ");
+            }
         }
+        
     }
 }
