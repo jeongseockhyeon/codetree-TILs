@@ -7,7 +7,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int[] numArr = new int[10];
         int sum = 0;
-        double three = 0;
+        float three = 0;
         int count = 0;
         
 
@@ -27,7 +27,7 @@ public class Main {
             }
         }
 
-        double threeAvg = three / count;
+        float threeAvg = three / count;
 
         System.out.print(sum + " " + threeAvg);
 
