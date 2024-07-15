@@ -10,7 +10,7 @@ public class Main {
         int sum = 0;
 
         int[] cntArr = new int[10];
-        while(a > 0){
+        while(a > 1){
             cntArr[a%b]++;
             a = a / b;
         }
