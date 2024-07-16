@@ -8,7 +8,7 @@ public class Main {
         int q = sc.nextInt();
         int[] numArr = new int[n];
 
-        int idx = 0;
+        
 
         for(int i =0; i < n; i++){
             numArr[i] = sc.nextInt();
@@ -20,6 +20,7 @@ public class Main {
                 System.out.println(numArr[a-1]);
             } else if(query == 2){
                 int b = sc.nextInt();
+                int idx = 0;
                 for(int j = 0; j < n; j++){
                     if(numArr[j] == b){
                         idx = j+1;
@@ -35,6 +36,7 @@ public class Main {
                     System.out.print(numArr[j]);
                     System.out.print(' ');
                 }
+                System.out.println();
             }
         }
     }
