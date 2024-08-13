@@ -1,17 +1,21 @@
 import java.util.*;
 
 public class Main {
-    public static int first(int i){
-        return i/10;
+    public static boolean find(int i){
+        while(i != 0){
+            if( i % 10 == 3 || i % 10 == 6 || i % 10 == 9){
+                return true;
+            }
+            i /= 10;
+        }
+        return false;
     }
-    public static int second(int i){
-        return i%10;
-    }
+ 
 
     public static int cnt(int a, int b){
         int cnt = 0;
         for(int i = a; i <= b; i++){
-            if(first(i) == 3 || second(i) == 3 || first(i) == 6 || second(i) == 6|| first(i) == 9 || second(i) == 9 || i % 3 == 0 ){
+            if( find(i) || i % 3 == 0 ){
                 cnt++;
             }
            
