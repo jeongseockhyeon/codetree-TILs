@@ -3,7 +3,7 @@ import java.util.*;
 public class Main {
     public static void findLcm(int n, int m){
         int lcm =0;
-        for(int i = Math.max(n,m); i < n*m; i++){
+        for(int i = Math.max(n,m); i <= n*m; i++){
             if(i % n == 0 && i % m == 0){
                 lcm = i;
                 break;
