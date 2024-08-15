@@ -12,8 +12,7 @@ public class Main {
        if(o =='+') return a+c;
        else if(o == '-') return a-c;
        else if(o == '/') return a/c;
-       else if(o == '*') return a*c;
-       else 
+       else return a*c;
     }
 
     public static void main(String[] args) {
