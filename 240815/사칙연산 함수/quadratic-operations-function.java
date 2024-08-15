@@ -1,11 +1,19 @@
 import java.util.*;
 
 public class Main {
+     public static boolean checkOption(int a, char o, int c){
+       if(o =='+') return true;
+       else if(o == '-') return true;
+       else if(o == '/') return true;
+       else if(o == '*') return true;
+       else return false
+    }
     public static int Option(int a, char o, int c){
        if(o =='+') return a+c;
        else if(o == '-') return a-c;
        else if(o == '/') return a/c;
-       else return a*c;
+       else if(o == '*') return a*c;
+       else 
     }
 
     public static void main(String[] args) {
@@ -17,7 +25,13 @@ public class Main {
         char o = sc.next().charAt(0);
         int c = sc.nextInt();
 
-        System.out.print(a+" "+o+" "+c+" = "+Option(a,o,c));
+        if(checkOption){
+            System.out.print(a+" "+o+" "+c+" = "+Option(a,o,c));
+        } else{
+            System.out.print("False")
+        }
+
+        
 
     }
 }
