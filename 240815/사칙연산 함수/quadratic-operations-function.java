@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class Main {
-     public static boolean checkOption(int a, char o, int c){
+     public static boolean checkOption(char o){
        if(o =='+') return true;
        else if(o == '-') return true;
        else if(o == '/') return true;
@@ -24,7 +24,7 @@ public class Main {
         char o = sc.next().charAt(0);
         int c = sc.nextInt();
 
-        if(checkOption){
+        if(checkOption(o)){
             System.out.print(a+" "+o+" "+c+" = "+Option(a,o,c));
         } else{
             System.out.print("False");
