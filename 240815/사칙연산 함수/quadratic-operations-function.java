@@ -6,7 +6,7 @@ public class Main {
        else if(o == '-') return true;
        else if(o == '/') return true;
        else if(o == '*') return true;
-       else return false
+       else return false;
     }
     public static int Option(int a, char o, int c){
        if(o =='+') return a+c;
@@ -28,7 +28,7 @@ public class Main {
         if(checkOption){
             System.out.print(a+" "+o+" "+c+" = "+Option(a,o,c));
         } else{
-            System.out.print("False")
+            System.out.print("False");
         }
 
         
