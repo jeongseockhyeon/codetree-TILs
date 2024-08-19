@@ -14,6 +14,13 @@ public class Main {
         int c = sc.nextInt();
 
         int elapsedTime = 0;
+        if(day > a) return -1;
+        else{
+            if(hour > b) return -1;
+            else{
+                if(min > c) return -1;
+            }
+        }
 
         while(true){
             if(day == a && hour == b && min == c) break;
