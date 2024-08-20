@@ -10,12 +10,12 @@ public class Main {
         int m2 = sc.nextInt();
         int d2 = sc.nextInt();
 
-        int day = 0;
+        int day = 1;
         String[] dayOfWeek = new String[]{"Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"};
         int[] lastDays = new int[]{0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
         while(true){
-            if(m1 == m2 && d1 == d2+1) break;
+            if(m1 == m2 && d1 == d2-1) break;
             d1++;
             day++;
             if(m1 > 12){
@@ -23,7 +23,7 @@ public class Main {
             }
             if(d1 > lastDays[m1]){
                 m1++;
-                d1 = 0;
+                d1 = 1;
                 
             }
 
